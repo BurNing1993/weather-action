@@ -12,7 +12,7 @@ jobs:
       - name: "Checkout codes"
         uses: actions/checkout@v1
       - name: "Get Result"
-        run: bash ./weather.sh
+        run: node index.js
       - name: "Send mail"
         uses: dawidd6/action-send-mail@master
         with:
@@ -21,7 +21,7 @@ jobs:
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: 成都天气预报
-          body: file://result.png
+          body: file://result.html
           to: joey2019q@163.com
           from: 阿飞
-          content_type: image/png
+          content_type: text/html
