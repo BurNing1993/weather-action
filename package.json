@@ -1,0 +1,27 @@
+{
+  "name": "weather-action",
+  "version": "1.0.0",
+  "description": "weather",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BurNing1993/weather-action.git"
+  },
+  "keywords": [
+    "github",
+    "action"
+  ],
+  "author": "JOey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BurNing1993/weather-action/issues"
+  },
+  "homepage": "https://github.com/BurNing1993/weather-action#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "ejs": "^3.0.1"
+  }
+}

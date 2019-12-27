@@ -21,7 +21,7 @@ jobs:
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: 成都天气预报
-          body: file://result.html
+          body: file://result.png
           to: joey2019q@163.com
           from: 阿飞
           content_type: text/html
