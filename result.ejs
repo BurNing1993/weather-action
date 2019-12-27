@@ -10,14 +10,8 @@
 </head>
 
 <body>
-  <div class="container">
-    <% if (currentCondition.length) { %>
-    <ul>
-      <% currentCondition.forEach(function (cc) { %>
-      <li><%= cc.temp_C %></li>
-      <% }) %>
-    </ul>
-    <% } %>
+  <div class="container text-center">
+    <img src="<%= url %>" class="rounded" alt="weather">
   </div>
 </body>
 

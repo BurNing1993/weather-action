@@ -21,10 +21,12 @@ const fetchData = async (city = 'Chengdu,jinniu') => {
 
 const output = async () => {
   try {
-    const data = await fetchData()
+    // const data = await fetchData()
     const file = await promisify(readFile)(join(__dirname, './result.ejs'), 'utf-8')
+    const city ='Chengdu,jinniu'
     const ret = ejs.compile(file)({
-      currentCondition:data.current_condition
+      // currentCondition:data.current_condition,
+      url:`http://wttr.in/${city}_0tqp_lang=zh.png`
     });
     await promisify(writeFile)('result.html', ret)
   } catch (error) {
