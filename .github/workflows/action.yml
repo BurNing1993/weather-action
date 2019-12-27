@@ -24,4 +24,3 @@ jobs:
           body: file://result.png
           to: joey2019q@163.com
           from: 阿飞
-          content_type: text/html
