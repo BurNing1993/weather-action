@@ -23,5 +23,5 @@ jobs:
           subject: 成都天气预报
           body: file://result.html
           to: joey2019q@163.com
-          from: GitHub Actions
+          from: 阿飞
           content_type: text/html
